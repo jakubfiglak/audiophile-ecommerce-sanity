@@ -1,17 +1,41 @@
 export default {
-  name: 'category',
-  title: 'Category',
-  type: 'document',
+  name: "category",
+  title: "Category",
+  type: "document",
   fields: [
     {
-      name: 'title',
-      title: 'Title',
-      type: 'string',
+      name: "name",
+      title: "Name",
+      type: "string",
+      validation: (Rule) => Rule.required(),
     },
     {
-      name: 'description',
-      title: 'Description',
-      type: 'text',
+      name: "slug",
+      title: "Slug",
+      type: "slug",
+      options: {
+        source: "name",
+      },
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      name: "image",
+      title: "Image",
+      type: "mainImage",
+      validation: (Rule) => Rule.required(),
     },
   ],
-}
+  preview: {
+    select: {
+      name: "name",
+      image: "image",
+    },
+    prepare(selection) {
+      const { name, image } = selection;
+      return {
+        title: name,
+        media: image,
+      };
+    },
+  },
+};
