@@ -1,7 +1,10 @@
+import { MdCategory as icon } from "react-icons/md";
+
 export default {
   name: "category",
   title: "Category",
   type: "document",
+  icon,
   fields: [
     {
       name: "name",
