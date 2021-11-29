@@ -1,0 +1,10 @@
+:root {
+  /* Brand colors */
+  --brand-primary: #d87d4a;
+  --brand-primary--inverted: #ffffff;
+  --brand-secondary: #101010;
+  --brand-secondary--inverted: #f1f1f1;
+  /* Main Navigation */
+  --main-navigation-color: var(--brand-secondary);
+  --main-navigation-color--inverted: var(--brand-secondary--inverted);
+}
