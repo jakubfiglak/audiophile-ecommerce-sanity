@@ -1,10 +1,12 @@
 import createSchema from "part:@sanity/base/schema-creator";
 import schemaTypes from "all:part:@sanity/base/schema-type";
 
-import category from "./category";
+import category from "./documents/category";
+import product from "./documents/product";
 import mainImage from "./objects/mainImage";
+import boxContent from "./objects/boxContent";
 
 export default createSchema({
   name: "default",
-  types: schemaTypes.concat([category, mainImage]),
+  types: schemaTypes.concat([category, product, mainImage, boxContent]),
 });

@@ -1,4 +1,4 @@
-import { MdCategory as icon } from "react-icons/md";
+import { FaMusic as icon } from "react-icons/fa";
 
 export default {
   name: "category",
