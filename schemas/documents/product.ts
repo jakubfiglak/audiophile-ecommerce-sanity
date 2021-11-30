@@ -28,6 +28,11 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
+      name: "heroImage",
+      title: "Hero Image",
+      type: "mainImage",
+    },
+    {
       name: "category",
       title: "Category",
       type: "reference",
