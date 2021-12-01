@@ -5,8 +5,15 @@ import category from "./documents/category";
 import product from "./documents/product";
 import mainImage from "./objects/mainImage";
 import boxContent from "./objects/boxContent";
+import heroImages from "./objects/heroImages";
 
 export default createSchema({
   name: "default",
-  types: schemaTypes.concat([category, product, mainImage, boxContent]),
+  types: schemaTypes.concat([
+    category,
+    product,
+    mainImage,
+    boxContent,
+    heroImages,
+  ]),
 });
