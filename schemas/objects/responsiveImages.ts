@@ -1,6 +1,6 @@
 export default {
-  name: "heroImages",
-  title: "Hero Images",
+  name: "responsiveImages",
+  title: "Responsive Images",
   type: "object",
   fields: [
     {
@@ -22,15 +22,4 @@ export default {
       validation: (Rule) => Rule.required(),
     },
   ],
-  preview: {
-    select: {
-      media: "mobile.asset",
-    },
-    // prepare(selection) {
-    //   const { name, quantity } = selection;
-    //   return {
-    //     title: `${name} - ${quantity} ${quantity === 1 ? "pc." : "pcs."}`,
-    //   };
-    // },
-  },
 };

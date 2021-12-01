@@ -30,7 +30,12 @@ export default {
     {
       name: "heroImages",
       title: "Hero Images",
-      type: "heroImages",
+      type: "responsiveImages",
+    },
+    {
+      name: "featuredImages",
+      title: "Featured Images",
+      type: "responsiveImages",
     },
     {
       name: "category",
