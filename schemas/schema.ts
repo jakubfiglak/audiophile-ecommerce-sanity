@@ -5,7 +5,7 @@ import category from "./documents/category";
 import product from "./documents/product";
 import mainImage from "./objects/mainImage";
 import boxContent from "./objects/boxContent";
-import heroImages from "./objects/heroImages";
+import heroImages from "./objects/responsiveImages";
 
 export default createSchema({
   name: "default",
