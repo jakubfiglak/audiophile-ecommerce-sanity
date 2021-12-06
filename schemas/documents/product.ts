@@ -1,11 +1,17 @@
+import {
+  orderRankField,
+  orderRankOrdering,
+} from "@sanity/orderable-document-list";
 import { FaHeadphones as icon } from "react-icons/fa";
 
 export default {
   name: "product",
   title: "Product",
   type: "document",
+  orderings: [orderRankOrdering],
   icon,
   fields: [
+    orderRankField({ type: "product" }),
     {
       name: "name",
       title: "Name",
