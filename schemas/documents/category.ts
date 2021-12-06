@@ -1,11 +1,18 @@
+import {
+  orderRankField,
+  orderRankOrdering,
+} from "@sanity/orderable-document-list";
+
 import { FaMusic as icon } from "react-icons/fa";
 
 export default {
   name: "category",
   title: "Category",
   type: "document",
+  orderings: [orderRankOrdering],
   icon,
   fields: [
+    orderRankField({ type: "category" }),
     {
       name: "name",
       title: "Name",
