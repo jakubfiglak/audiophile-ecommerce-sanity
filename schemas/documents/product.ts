@@ -45,6 +45,13 @@ export default {
       type: "responsiveImages",
     },
     {
+      name: "previewImages",
+      title: "Preview Images",
+      description: "Images for the product preview on Category page",
+      type: "responsiveImages",
+      validation: (Rule) => Rule.required(),
+    },
+    {
       name: "featured",
       title: "Featured",
       type: "boolean",
