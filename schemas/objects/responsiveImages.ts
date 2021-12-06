@@ -22,4 +22,17 @@ export default {
       validation: (Rule) => Rule.required(),
     },
   ],
+  preview: {
+    select: {
+      name: "mobile.alt",
+      image: "mobile.asset",
+    },
+    prepare(selection) {
+      const { name, image } = selection;
+      return {
+        title: name,
+        media: image,
+      };
+    },
+  },
 };

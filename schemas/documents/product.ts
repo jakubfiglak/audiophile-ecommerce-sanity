@@ -45,6 +45,12 @@ export default {
       type: "responsiveImages",
     },
     {
+      name: "productImages",
+      title: "Product Images",
+      type: "responsiveImages",
+      validation: (Rule) => Rule.required(),
+    },
+    {
       name: "previewImages",
       title: "Preview Images",
       description: "Images for the product preview on Category page",
@@ -92,7 +98,7 @@ export default {
     {
       name: "features",
       title: "Features",
-      type: "text",
+      type: "blockContent",
       validation: (Rule) => Rule.required(),
     },
     {
@@ -107,7 +113,7 @@ export default {
       name: "gallery",
       title: "Gallery",
       type: "array",
-      of: [{ type: "mainImage" }],
+      of: [{ type: "responsiveImages" }],
       validation: (Rule) => Rule.required(),
     },
     {
