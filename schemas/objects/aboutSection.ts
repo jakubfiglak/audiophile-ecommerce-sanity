@@ -6,8 +6,7 @@ export default {
     {
       name: "title",
       title: "Title",
-      type: "array",
-      of: [{ type: "block" }],
+      type: "blockContent",
       validation: (Rule) => Rule.required(),
     },
     {
