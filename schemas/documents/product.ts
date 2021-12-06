@@ -45,6 +45,13 @@ export default {
       type: "responsiveImages",
     },
     {
+      name: "featured",
+      title: "Featured",
+      type: "boolean",
+      initialValue: false,
+      validation: (Rule) => Rule.required(),
+    },
+    {
       name: "featuredImages",
       title: "Featured Images",
       type: "responsiveImages",
@@ -60,6 +67,7 @@ export default {
       name: "new",
       title: "New",
       type: "boolean",
+      initialValue: true,
       validation: (Rule) => Rule.required(),
     },
     {
@@ -108,11 +116,12 @@ export default {
     select: {
       name: "name",
       image: "image",
+      featured: "featured",
     },
     prepare(selection) {
-      const { name, image } = selection;
+      const { name, image, featured } = selection;
       return {
-        title: name,
+        title: `${name} ${featured ? "⭐" : ""}`,
         media: image,
       };
     },
