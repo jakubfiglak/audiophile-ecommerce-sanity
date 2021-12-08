@@ -58,6 +58,13 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
+      name: "thumbnailImages",
+      title: "Thumbnail Images",
+      description:
+        "Images for the product thumbnail in 'Related products' section",
+      type: "responsiveImages",
+    },
+    {
       name: "featured",
       title: "Featured",
       type: "boolean",
