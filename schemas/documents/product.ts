@@ -40,6 +40,12 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
+      name: "cartImage",
+      title: "Cart Image",
+      type: "mainImage",
+      validation: (Rule) => Rule.required(),
+    },
+    {
       name: "heroImages",
       title: "Hero Images",
       type: "responsiveImages",
